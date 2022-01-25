@@ -1,6 +1,4 @@
 <template>
-<!-- MAIN -->
-  <main class="main width-100 flex flex-direction-column">
       <!-- JUMBOTRON -->
       <div class="jumbotron width-100">
           <div class="opacity width-100 flex">
@@ -18,12 +16,11 @@
           </div>
 
       </div>
-  </main>
 </template>
 
 <script>
 export default {
-    name: "Main",
+    name: "Jumbotron",
 }
 </script>
 
@@ -32,6 +29,7 @@ export default {
 @import "../assets/partials/_mixin.scss";
 @import "../assets/partials/_variables.scss";
 
+// JUMBOTRON
 .jumbotron {
     height: $first-height;
     background-image: url("../assets/img/bg-9.jpg");
@@ -42,7 +40,7 @@ export default {
         .call-to-action {
             width: 50%;
             h2{
-                color: $color-bg-button;
+                color: $third-color-text;
                 font-size: 0.8em;
             }
             h1 {

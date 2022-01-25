@@ -74,7 +74,7 @@ export default {
 // HEADER
 .header {
     height: $header-height;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     // top
