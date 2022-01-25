@@ -1,0 +1,51 @@
+@import "./variables";
+@import "./mixin";
+
+// GENERAL
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    color: $first-color-text;
+    font-size: 100%;
+}
+// MY_CLASS 
+// sizing
+.width-100 {
+    width: 100%;
+}
+.width-60 {
+    width: 60%;
+}
+.margin-auto {
+    margin: auto;
+}
+// flex
+.flex {
+    display: flex;
+}
+.flex-direction-column {
+    flex-direction: column;
+}
+.justify_content-center {
+    justify-content: center;
+}
+.justify_content-space-beetween {
+    justify-content: space-between;
+}
+.align-items-center {
+    align-items: center;
+}
+// button
+.standard-button {
+    @include standard-button;
+}
+.button-with-bg {
+    @include button-with-bg;
+}
+.button-with-border {
+    @include button-with-border;
+}
+

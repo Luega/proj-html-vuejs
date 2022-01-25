@@ -1,0 +1,35 @@
+@import "./variables";
+
+// list // ul-li-a
+@mixin reset-list {
+    list-style: none;
+    a {
+        color: $first-color-text;
+        text-decoration: none;
+    }
+}
+@mixin list-nav {
+    @include reset-list;
+    li {
+        display: inline-block;
+    }
+}
+// button
+@mixin standard-button {
+    padding: 1em 1.5em;
+    border-radius: 5px;
+    color: $first-color-text;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+@mixin button-with-bg {
+    @include standard-button;
+    border: none;
+    background-color: $color-bg-button;
+}
+@mixin button-with-border {
+    @include standard-button;
+    border: 1px solid $color-bg-button;
+    background: none;
+}
+
