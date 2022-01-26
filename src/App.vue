@@ -7,6 +7,7 @@
     <SectionProcedure />
     <SectionResult />
     <SectionFeedback />
+    <SectionContact />
     <Footer />
   </div>
 </template>
@@ -19,6 +20,7 @@ import SectionServices from "./components/SectionServices.vue"
 import SectionProcedure from "./components/SectionProcedure.vue"
 import SectionResult from "./components/SectionResult.vue"
 import SectionFeedback from "./components/SectionFeedback.vue"
+import SectionContact from "./components/SectionContact.vue"
 import Footer from "./components/Footer.vue"
 
 export default {
@@ -31,6 +33,7 @@ export default {
     SectionProcedure,
     SectionResult,
     SectionFeedback,
+    SectionContact,
     Footer
   },
 };
