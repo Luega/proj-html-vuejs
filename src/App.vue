@@ -4,6 +4,7 @@
     <Jumbotron />
     <SectionStory />
     <SectionServices />
+    <SectionProcedure />
     <SectionResult />
     <SectionFeedback />
     <Footer />
@@ -15,6 +16,7 @@ import Header from "./components/Header.vue"
 import Jumbotron from "./components/Jumbotron.vue"
 import SectionStory from "./components/SectionStory.vue"
 import SectionServices from "./components/SectionServices.vue"
+import SectionProcedure from "./components/SectionProcedure.vue"
 import SectionResult from "./components/SectionResult.vue"
 import SectionFeedback from "./components/SectionFeedback.vue"
 import Footer from "./components/Footer.vue"
@@ -26,6 +28,7 @@ export default {
     Jumbotron,
     SectionStory,
     SectionServices,
+    SectionProcedure,
     SectionResult,
     SectionFeedback,
     Footer
