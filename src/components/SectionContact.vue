@@ -40,7 +40,7 @@
                         </a>
                         <a href="#">
                             <i class="fas fa-map-marker-alt icon-contact"></i>
-                            <span>{{this.email}}</span>
+                            <span>{{this.position}}</span>
                         </a>
                         <button class="button-with-border">view map</button>
                     </div>
@@ -57,6 +57,7 @@ export default {
         return {
             phone: "+1(305) 1234-5678",
             email: "hello@example.com",
+            position: "Main Avanue, 987"
         }
     }
 }

@@ -32,23 +32,23 @@ export default {
             procedures: [
                 {
                     name: "Collection of information",
-                    info: " Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                    info: " Lorem ipsum dolor sit amet consectetur."
                 },
                 {
-                    name: "Collection of information",
-                    info: " Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                    name: "Service Invoice Sending",
+                    info: " Lorem ipsum dolor sit amet consectetur."
                 },
                 {
-                    name: "Collection of information",
-                    info: " Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                    name: "Withdrawal of Cargo",
+                    info: " Lorem ipsum dolor sit amet consectetur."
                 },
                 {
-                    name: "Collection of information",
-                    info: " Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                    name: "Transport Customer Order",
+                    info: " Lorem ipsum dolor sit amet consectetur."
                 },
                 {
-                    name: "Collection of information",
-                    info: " Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                    name: "Successful Delivery",
+                    info: " Lorem ipsum dolor sit amet consectetur."
                 },
             ]
         }
@@ -99,7 +99,8 @@ export default {
                 left:45%;
             }
             h5 {
-                margin: 1em 0 0.5em 0;
+                width: 80%;
+                margin: 1em auto 0.5em auto;
                 font-size: 1.5em;
                 color: $fourth-color-text;
                 text-align: center;

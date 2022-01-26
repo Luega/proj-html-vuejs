@@ -8,7 +8,7 @@
                   <span class="color-logo">NEX</span>
                   <span> GEN</span>
               </h1>
-              <p>A functional HTML template for corporate &#38; Business</p>
+              <p>A functional HTML template for corporate &#38; Business.</p>
               <div class="contact-info flex flex-direction-column">
                   <a href="#">
                       <i class="fas fa-phone-alt icon-contact"></i>
@@ -20,7 +20,7 @@
                   </a>
                   <a href="#">
                       <i class="fas fa-map-marker-alt icon-contact"></i>
-                      <span>{{this.email}}</span>
+                      <span>{{this.position}}</span>
                   </a>
                   <button class="button-with-border">get in touch</button>
              </div>
@@ -89,19 +89,20 @@ export default {
             menus: [
                 {
                     title: "About",
-                    lists: ["The Company", "The Company", "The Company", "The Company", "The Company", "The Company"]
+                    lists: ["The Company", "Institutional", "Social & Events", "Innovation", "Enviroment", "Technology"]
                 },
                 {
-                    title: "koior",
-                    lists: ["Ciaso", "Ciaso", "Ciaso", "Ciaso", "Ciaso", "Ciaso"]
+                    title: "Transport",
+                    lists: ["Industrialized", "Chemicals", "Liquids", "Construction", "Laminated Wood", "And others"]
                 },
                 {
-                    title: "Abofdsafut",
-                    lists: ["fgyh", "fgyh", "fgyh", "fgyh", "fgyh", "fgyh"]
+                    title: "Support",
+                    lists: ["Responsability", "Terms of Use", "About Cookies", "Privacy Policy", "Accessability", "Information"]
                 },
             ],
             phone: "+1(305) 1234-5678",
             email: "hello@example.com",
+            position: "Main Avanue, 987"
         }
     }
 }

@@ -8,7 +8,7 @@
                     <span>Trusted</span>
                     <span class="color"> Feedback</span>
                 </h2>
-                <p class="p">With all of this exprtise and capability comes an unrivalled commitment to customer service. We will work hard to understand your needs in order to develop a productive, long-term partnership.</p>
+                <p class="p">We work intensively in search of ideals that can add up in the lives of our customers. This is what moves us and we are grateful for the recognition.</p>
           </div>
           <!-- bottom -->
           <ul class="width-100 flex justify_content-space-beetween">
@@ -30,14 +30,17 @@ export default {
         return {
             feedbacks: [
                 {
+                    logo: "require('/assets/img/logo-1.png')",
                     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolorem molestiae eveniet in minima labore cumque vero dolorum porro unde.",
                     conc: "We are continually focused on developing technology solution adapted to our client´s needs."
                 },
                 {
+                    logo: '../assets/img/logo-1.png',
                     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolorem molestiae eveniet in minima labore cumque vero dolorum porro unde.",
                     conc: "We are continually focused on developing technology solution adapted to our client´s needs."
                 },
                 {
+                    logo: '../assets/img/logo-1.png',
                     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolorem molestiae eveniet in minima labore cumque vero dolorum porro unde.",
                     conc: "We are continually focused on developing technology solution adapted to our client´s needs."
                 }
