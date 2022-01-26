@@ -5,8 +5,8 @@
           <div class="top width-100 margin-auto flex flex-direction-column align-items-center">
                 <h3 class="h3">CUSTOMER TESTIMONIALS</h3>
                 <h2 class="h2">
-                    <span>Trusted</span>
-                    <span class="color"> Feedback</span>
+                    <span>Trusted </span>
+                    <span class="color">Feedback</span>
                 </h2>
                 <p class="p">We work intensively in search of ideals that can add up in the lives of our customers. This is what moves us and we are grateful for the recognition.</p>
           </div>
@@ -57,6 +57,8 @@ export default {
 
 .container {
     height: $first-height;
+    min-height: $first-height;
+    min-width: 100%;
     background-color: $second-color-bg-section;
     // top
     .top {

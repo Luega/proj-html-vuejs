@@ -78,6 +78,8 @@ export default {
 // HEADER
 .header {
     height: $header-height;
+    min-height: $header-height;
+    min-width: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -121,16 +123,25 @@ export default {
                     margin-right: 2em;
                     a {
                         text-transform: uppercase;
+                        &:hover {
+                            color: $third-color-text;
+                        }
                     }
                 }
             }
             .user {
                 margin-right: 2em;
                 cursor: pointer;
+                &:hover {
+                            color: $third-color-text;
+                        }
             }
             .button {
-                @include button-with-bg;
+                @include button-with-border;
                 cursor: pointer;
+                &:hover {
+                    @include button-with-bg;
+                }
             }
         }
     }

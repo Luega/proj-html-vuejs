@@ -83,7 +83,9 @@ export default {
 
 // SECTION-1
 .section-story {
-    height: 100vh;
+    height: $first-height;
+    min-height: $first-height;
+    min-width: 100%;
     background-color: $first-color-bg-section;
     // left
     .story {

@@ -22,7 +22,7 @@
                       </select>
                       <textarea class="input-user" name="text" id="text" placeholder="Message"></textarea>
                   </form>
-                  <button class="button-with-bg">send</button>
+                  <button class="button-with-border">send</button>
               </div>
               <!-- right -->
               <div class="box-contacts">
@@ -69,8 +69,16 @@ export default {
 @import "../assets/partials/_variables.scss";
 
 .section-contact {
-    height: 100vh;
+    height: $first-height;
+    min-height: $first-height;
+    min-width: 100%;
     background-color: $first-color-bg-section;
+    .button-with-border {
+        color: $third-color-text;
+        &:hover {
+                    @include button-with-bg;
+                }
+    }
     // left
     .box-input {
         width: 60%;
@@ -117,6 +125,9 @@ export default {
             margin-bottom: 1em;
             color: $third-color-text;
             text-decoration: none;
+            &:hover {
+                    text-decoration: underline;
+                }
             .icon-contact {
                 width: 30px;
                 height: 30px;

@@ -115,6 +115,8 @@ export default {
 
 .container {
     height: $first-height;
+    min-height: $first-height;
+    min-width: 100%;
     background: linear-gradient($second-color-bg-section , #19191d);
     // top
     // left
@@ -135,6 +137,9 @@ export default {
             margin-bottom: 1em;
             color: $second-color-text;
             text-decoration: none;
+            &:hover {
+                    text-decoration: underline;
+                }
             .icon-contact {
                 margin-right: 0.5em;
             }
@@ -142,6 +147,9 @@ export default {
         button {
             margin-top: 1em;
             width: 60%;
+            &:hover {
+                    @include button-with-bg;
+                }
         }
     }
     // right
@@ -164,6 +172,9 @@ export default {
                     margin: 0.5em 0;
                     a {
                         color: $second-color-text;
+                        &:hover {
+                            text-decoration: underline;
+                        }
                         .icon-list {
                             margin-right: 0.5em;
                         }
@@ -183,6 +194,9 @@ export default {
             .green-link {
                 color: $third-color-text;
                 text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                }
             }
         }
         .icon-top {

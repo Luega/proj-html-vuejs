@@ -26,6 +26,7 @@
     @include standard-button;
     border: none;
     background-color: $color-bg-button;
+    border: 1px solid transparent;
 }
 @mixin button-with-border {
     @include standard-button;

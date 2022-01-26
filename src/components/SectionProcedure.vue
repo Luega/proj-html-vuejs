@@ -62,7 +62,9 @@ export default {
 @import "../assets/partials/_variables.scss";
 
 .container {
-    height: $first-height;
+    height: $second-height;
+    min-height: $second-height;
+    min-width: 100%;
     background-color: $third-color-bg-section;
     // top
     .top {

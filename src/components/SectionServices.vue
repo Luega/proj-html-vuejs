@@ -4,8 +4,8 @@
           <!-- top -->
           <h3 class="h3">ROAD TRANSPORT</h3>
           <h2 class="h2">
-              <span>Main</span>
-              <span class="color"> Services</span>
+              <span>Main </span>
+              <span class="color">Services</span>
           </h2>
           <div class="flex width-100 justify_content-space-beetween">
               <p class="p">With all of this exprtise and capability comes an unrivalled commitment to customer service. We will work hard to understand your needs in order to develop a productive, long-term partnership.</p>
@@ -60,6 +60,8 @@ export default {
 
 .container {
     height: $first-height;
+    min-height: $first-height;
+    min-width: 100%;
     background-color: $second-color-bg-section;
     // top
     h2 {
@@ -70,6 +72,9 @@ export default {
     }
     .p {
         width: 75%;
+    }
+    .button-with-border:hover {
+        @include button-with-bg;  
     }
     // bottom
     ul {

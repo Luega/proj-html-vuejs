@@ -8,7 +8,7 @@
                       <h1>CARGO TRANSPORT</h1>
                       <p>Fractional or exclusive road cargo transportation to all regions, with small, medium and large vehicles.</p>
                       <div class="box-buttons width-100 flex">
-                          <button class="button-with-bg">get in touch</button>
+                          <button class="button-with-border">get in touch</button>
                           <button class="button-with-border">read more</button>
                       </div>
                   </div>
@@ -32,6 +32,8 @@ export default {
 // JUMBOTRON
 .jumbotron {
     height: $first-height;
+    min-height: $first-height;
+    min-width: 100%;
     background-image: url("../assets/img/bg-9.jpg");
     background-size: cover;
     .opacity {
@@ -51,8 +53,11 @@ export default {
                 margin: 2em 0;
                 color: $second-color-text;
             }
-            .button-with-bg {
+            .button-with-border {
                 margin-right: 1.5em;
+                &:hover {
+                    @include button-with-bg;
+                }
             }
         }
     }

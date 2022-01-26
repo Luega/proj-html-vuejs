@@ -54,7 +54,9 @@ export default {
 @import "../assets/partials/_variables.scss";
 
 .container {
-    height: $first-height;
+    height: $second-height;
+    min-height: $second-height;
+    min-width: 100%;
     background-image: url(../assets/img/bg-10.jpg);
     background-position: center;
     // top
