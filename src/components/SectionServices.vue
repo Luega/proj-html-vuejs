@@ -1,6 +1,6 @@
 <template>
-  <section class="container width-100 flex">
-      <div class="services width-60 margin-auto flex flex-direction-column">
+  <section class="section-services container width-100 flex">
+      <div class="width-60 margin-auto flex flex-direction-column">
           <!-- top -->
           <h3 class="h3">ROAD TRANSPORT</h3>
           <h2 class="h2">
@@ -78,6 +78,7 @@ export default {
             background-color: $color-bg-card;
             border-radius: 10px;
             position: relative;
+            cursor: pointer;
             .icon-service {
                 width: 60px;
                 height: 60px;
