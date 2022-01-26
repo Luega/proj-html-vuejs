@@ -5,8 +5,8 @@
           <div class="box-comany-story width-60 flex margin-auto">
               <!-- left -->
               <div class="story">
-                  <h3>WHO WE ARE</h3>
-                  <h2>
+                  <h3 class="h3">WHO WE ARE</h3>
+                  <h2 class="h2">
                       <span class="color"><font-awesome-icon class="user" :icon="['fas', 'gem']"/> Excellence</span>
                       <span> in Transport</span>
                   </h2>
@@ -89,22 +89,12 @@ export default {
     .story {
         width: 70%;
         color: $second-color-text;
-        h3 {
-            color: $third-color-text;
-            font-size: 0.8em;
-        }
         h2 {
-            margin: 0.5em 0;
-            color: $fourth-color-text;
-            font-size: 3em;
-            font-weight: 800;
-            display: inline-block;
-            .color {
-                display: inline-block;
-                padding: 0.1em 0.3em;
-                color: $third-color-text;
-                background-color: $color-bg-title;
-            }
+            color: $fourth-color-text;;
+        }
+        .color {
+            color: $third-color-text;
+            background-color: $color-bg-title;
         }
         p {
             margin-bottom: 1.5em;
@@ -118,6 +108,7 @@ export default {
             padding: 0 1em;
         }
     }
+}
     // right
     .vehicle-certification {
         width: 30%;
@@ -160,5 +151,4 @@ export default {
             }
         }
     }
-}
 </style>

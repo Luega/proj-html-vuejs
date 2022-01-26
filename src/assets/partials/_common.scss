@@ -48,4 +48,23 @@ html {
 .button-with-border {
     @include button-with-border;
 }
+// title
+.h2 {
+    margin: 0.3em 0;
+    font-size: 3em;
+    font-weight: 800;
+    display: inline-block;
+}
+.h3 {
+    color: $third-color-text;
+            font-size: 0.8em;
+}
+.color {
+    display: inline-block;
+    padding: 0.1em 0.3em;
+    background-color: $color-bg-title;
+}
+p {
+    color: $second-color-text;   
+}
 
