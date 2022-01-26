@@ -13,7 +13,7 @@
           <!-- bottom -->
           <ul class="width-100 flex justify_content-space-beetween">
               <li class="card" v-for="(feedback, index) in feedbacks" :key="index">
-                <img :src="require('../assets/img/logo-1.png')" alt="logo">
+                <img :src="require(`../assets/img/${feedback.logo}.png`)" alt="logo">
                 <p>{{ feedback.text }}</p>
                 <p>{{ feedback.conc }}</p>
                 <i class="fas fa-quote-right icon-note"></i>
@@ -30,17 +30,17 @@ export default {
         return {
             feedbacks: [
                 {
-                    logo: "require('/assets/img/logo-1.png')",
+                    logo: "logo-1",
                     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolorem molestiae eveniet in minima labore cumque vero dolorum porro unde.",
                     conc: "We are continually focused on developing technology solution adapted to our client´s needs."
                 },
                 {
-                    logo: '../assets/img/logo-1.png',
+                    logo: "logo-2",
                     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolorem molestiae eveniet in minima labore cumque vero dolorum porro unde.",
                     conc: "We are continually focused on developing technology solution adapted to our client´s needs."
                 },
                 {
-                    logo: '../assets/img/logo-1.png',
+                    logo: "logo-3",
                     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolorem molestiae eveniet in minima labore cumque vero dolorum porro unde.",
                     conc: "We are continually focused on developing technology solution adapted to our client´s needs."
                 }
