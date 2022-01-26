@@ -31,15 +31,15 @@
                     <p>Minus ratione accusantium voluptatibus amet.</p>
                     <div class="contact-info flex flex-direction-column">
                         <a href="#">
-                            <font-awesome-icon class="icon-contact" :icon="['fas', 'phone-alt']"/>
+                            <i class="fas fa-phone-alt icon-contact"></i>
                             <span>{{this.phone}}</span>
                         </a>
                         <a href="#">
-                            <font-awesome-icon class="icon-contact" :icon="['fas', 'envelope']"/>
+                            <i class="fas fa-envelope icon-contact"></i>
                             <span>{{this.email}}</span>
                         </a>
                         <a href="#">
-                            <font-awesome-icon class="icon-contact" :icon="['fas', 'envelope']"/>
+                            <i class="fas fa-map-marker-alt icon-contact"></i>
                             <span>{{this.email}}</span>
                         </a>
                         <button class="button-with-border">view map</button>

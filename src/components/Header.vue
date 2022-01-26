@@ -2,51 +2,55 @@
 <!-- HEADER -->
   <header class="header width-100 flex flex-direction-column">
       <!-- top -->
-      <div class="top width-100 flex">
-          <!-- left -->
-          <div class="open-hours flex justify_content-center align-items-center">
-              <font-awesome-icon class="clock" :icon="['fas', 'clock']"/>
-              <span>Open Hours: {{this.openDays}} - {{this.openHours}}</span>
-          </div>
-          <!-- right -->
-          <div class="contact-info flex align-items-center">
-              <a href="#">
-                  <font-awesome-icon class="phone" :icon="['fas', 'phone-alt']"/>
-              <span>{{this.phone}}</span>
-              </a>
-              <a href="#">
-                  <font-awesome-icon class="envelope" :icon="['fas', 'envelope']"/>
-              <span>{{this.email}}</span>
-              </a>
-              <a href="#">
-                  <font-awesome-icon :icon="['fas', 'user']"/>
-              </a>
-              <a href="#">
-                  <font-awesome-icon :icon="['fas', 'user']"/>
-              </a>
-              <a href="#">
-                  <font-awesome-icon :icon="['fas', 'user']"/>
-              </a>
+      <div class="top width-100">
+          <div class="container width-60 flex margin-auto justify_content-space-beetween align-items-center">
+                <!-- left -->
+                <div class="open-hours flex justify_content-center align-items-center">
+                    <i class="fas fa-clock clock"></i>
+                    <span>Open Hours: {{this.openDays}} - {{this.openHours}}</span>
+                </div>
+                <!-- right -->
+                <div class="contact-info flex align-items-center">
+                    <a href="#">
+                        <i class="fas fa-phone-alt icon-contact"></i>
+                    <span>{{this.phone}}</span>
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-envelope icon-contact"></i>
+                    <span>{{this.email}}</span>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
           </div>
       </div>
       <!-- bottom -->
-      <nav class="bottom width-100 flex">
-          <!-- left -->
-          <div class="company-name flex justify_content-center align-items-center">
-              <h1 class="first-part-company-name">NEX</h1>
-              <h1 class="second-part-company-name">GEN</h1>
-          </div>
-          <!-- right -->
-          <nav class="nav flex align-items-center">
-              <ul>
-                  <li v-for="(option, index) in navbarElements" :key="index">
-                      <a href="#">{{ option }}</a>
-                  </li>
-              </ul>
-              <font-awesome-icon class="user" :icon="['fas', 'user']"/>
-              <button class="button">GET IN TOUCH</button>
-          </nav>
-      </nav>
+      <div class="width-100">
+            <div class="bottom width-60 flex margin-auto justify_content-space-beetween align-items-center">
+                <!-- left -->
+                <h1 class="h1">
+                        <span class="color-logo">NEX</span>
+                        <span> GEN</span>
+                </h1>
+                <!-- right -->
+                <nav class="nav flex align-items-center">
+                    <ul>
+                        <li v-for="(option, index) in navbarElements" :key="index">
+                            <a href="#">{{ option }}</a>
+                        </li>
+                    </ul>
+                    <i class="far fa-user user"></i>
+                    <button class="button">GET IN TOUCH</button>
+                </nav>
+            </div>
+      </div>
   </header>
 </template>
 
@@ -79,25 +83,20 @@ export default {
     left: 0;
     // top
     .top {
-        height: 30%;
+        padding: 0.5em;
         color: $second-color-text;
         background-color: $color-bg-top-header;
         // left
         .clock {
             margin-right: 0.5em;
         }
-        .open-hours {
-            width: 50%;
-        }
         // right
         .contact-info {
-            width: 50%;
             a {
                 margin-right: 2em;
                 color: $second-color-text;
                 text-decoration: none;
-                .phone,
-                .envelope {
+                .icon-contact {
                     margin-right: 0.5em;
                 }
             }
@@ -105,12 +104,17 @@ export default {
     }
     // bottom
     .bottom {
-        height: 70%;
-        .company-name {
-            width: 40%;
+        padding: 1.5em 0;
+        h1 {
+            font-size: 1.5em;
+            .color-logo {
+                    padding: 0.3em 0.3em 0.3em 1em;
+                    border-radius: 50px 0 0 50px;
+                    color: $third-color-text;
+                    background-color: $color-second-bg-title;
+                }
         }
         .nav {
-            width: 60%;
             ul {
                 @include list-nav;
                 li {

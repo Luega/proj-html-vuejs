@@ -15,8 +15,8 @@
           <ul class="width-100 flex justify_content-space-beetween">
               <li class="card" v-for="(service, index) in services" :key="index">
                   <a href="#">
-                    <font-awesome-icon class="icon-service" :icon="['fas', 'user']"/>
-                    <font-awesome-icon class="icon-arrow" :icon="['fas', 'user']"/>
+                      <i :class="service.icon" class="icon-service"></i>
+                      <i class="fas fa-arrow-right icon-arrow"></i>
                     <h4>{{ service.name }}</h4>
                     <p>{{ service.info }}</p>
                   </a>
@@ -33,14 +33,17 @@ export default {
         return {
             services: [
                 {
+                    icon: "fas fa-truck-loading",
                     name: "Technology",
                     info: "We are continually focused on developing technology solution adapted to our client´s needs."
                 },
                 {
+                    icon: "fas fa-temperature-low",
                     name: "Reefer Cargo",
                     info: "We are continually focused on developing technology solution adapted to our client´s needs."
                 },
                 {
+                    icon: "fas fa-boxes",
                     name: "Dry Cargo",
                     info: "We are continually focused on developing technology solution adapted to our client´s needs."
                 }

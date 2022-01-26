@@ -7,7 +7,7 @@
               <div class="story">
                   <h3 class="h3">WHO WE ARE</h3>
                   <h2 class="h2">
-                      <span class="color"><font-awesome-icon class="user" :icon="['fas', 'gem']"/> Excellence</span>
+                      <span class="color"><i class="far fa-gem"></i>Excellence</span>
                       <span> in Transport</span>
                   </h2>
                   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A odio delectus eaque laborum cumque magni, in repudiandae minus eius facilis maxime. Ut deleniti rerum sed maiores nemo blanditiis atque voluptatem.</p>

@@ -11,15 +11,15 @@
               <p>A functional HTML template for corporate &#38; Business</p>
               <div class="contact-info flex flex-direction-column">
                   <a href="#">
-                      <font-awesome-icon class="icon-contact" :icon="['fas', 'phone-alt']"/>
+                      <i class="fas fa-phone-alt icon-contact"></i>
                       <span>{{this.phone}}</span>
                   </a>
                   <a href="#">
-                      <font-awesome-icon class="icon-contact" :icon="['fas', 'envelope']"/>
+                      <i class="fas fa-envelope icon-contact"></i>
                       <span>{{this.email}}</span>
                   </a>
                   <a href="#">
-                      <font-awesome-icon class="icon-contact" :icon="['fas', 'envelope']"/>
+                      <i class="fas fa-map-marker-alt icon-contact"></i>
                       <span>{{this.email}}</span>
                   </a>
                   <button class="button-with-border">get in touch</button>
@@ -32,37 +32,37 @@
                     <ul>
                         <li>
                             <a href="#">
-                                <font-awesome-icon class="icon-list" :icon="['fas', 'user']"/>
+                                <i class="fas fa-angle-right icon-list"></i>
                                 <span>{{ menu.lists[0] }}</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <font-awesome-icon class="icon-list" :icon="['fas', 'user']"/>
+                                <i class="fas fa-angle-right icon-list"></i>
                                 <span>{{ menu.lists[1] }}</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <font-awesome-icon class="icon-list" :icon="['fas', 'user']"/>
+                                <i class="fas fa-angle-right icon-list"></i>
                                 <span>{{ menu.lists[2] }}</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <font-awesome-icon class="icon-list" :icon="['fas', 'user']"/>
+                                <i class="fas fa-angle-right icon-list"></i>
                                 <span>{{ menu.lists[3] }}</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <font-awesome-icon class="icon-list" :icon="['fas', 'user']"/>
+                                <i class="fas fa-angle-right icon-list"></i>
                                 <span>{{ menu.lists[4] }}</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <font-awesome-icon class="icon-list" :icon="['fas', 'user']"/>
+                                <i class="fas fa-angle-right icon-list"></i>
                                 <span>{{ menu.lists[5] }}</span>
                             </a>
                         </li>
@@ -76,7 +76,7 @@
                 <span>Enjoy the low price. We are tracking any intention of piracy.</span>
                 <span>&#169;2020 NEXGEN is Proudly Powered by <a class="green-link" href="#">Codings</a>.</span>
           </div>
-          <a href="#"><font-awesome-icon class="icon-top" :icon="['fas', 'user']"/></a>  
+          <i class="fas fa-arrow-up icon-top"></i>
       </div>
   </footer>
 </template>
@@ -192,6 +192,7 @@ export default {
             color: $second-color-bg-section;
             background-color: $color-bg-card;
             border-radius: 50%;
+            cursor: pointer;
         }
     }
 }

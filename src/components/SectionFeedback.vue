@@ -13,10 +13,10 @@
           <!-- bottom -->
           <ul class="width-100 flex justify_content-space-beetween">
               <li class="card" v-for="(feedback, index) in feedbacks" :key="index">
-                <img :src="require('../assets/img/logo-1.png')" :alt="logo-woocommerce">
+                <img :src="require('../assets/img/logo-1.png')" alt="logo">
                 <p>{{ feedback.text }}</p>
                 <p>{{ feedback.conc }}</p>
-                <font-awesome-icon class="icon-note" :icon="['fas', 'user']"/>
+                <i class="fas fa-quote-right icon-note"></i>
               </li>
           </ul>
       </div>
@@ -83,10 +83,11 @@ export default {
                 filter: invert(100%);
             }
             .icon-note {
+                font-size: 1.5em;
                 position: absolute;
                 bottom:25px;
                 right:20px;
-                color: $third-color-text;
+                color: rgb(75, 75, 75);
             }
             p {
                 margin-top: 1em;
